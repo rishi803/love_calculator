@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>rishi</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    
+
+    <style>
+      body{
+        background-image:url('lv3.jpg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        height:100vh;
+        width:100%;
+        background-position: center;
+        position: relative;
+        display:flex;
+          justify-content:center;
+          align-items:center;
+      }
+      .card{
+          max-width:500px;
+          background-image:linear-gradient(red,green);
+          
+      }
+
+      .rk{
+          border:1px solid blue ;
+      }
+
+      .rks{
+          font-style: italic;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+    </style>
+
+
+  </head>
+  <body>
+   
+    <div class="card m-auto text-center">
+        <div class="card-header rks"><h2>LOVE CALCULATOR</h2></div> 
+        <div class="card-body">
+        <form class="form-inline">
+            <div class="form-group">
+          <input type="text" id="name"class="form-control text-center rk" placeholder=" You"  >   
+      <div>  <span class="pl-4 pr-4">+</span> </div>  
+          <input type="text" id="lname"class="form-control text-center rk"  placeholder=" Your love">   
+            </div>
+            </form>
+            <div><button class="btn btn-outline-primary mt-4 w-50" onclick="my()">
+                  CALCULATE
+            </button></div><br>
+            <div >
+                <input type="text" name="name" id="lovevalue" class="form-control  text-center" placeholder="Your Love percentage😍">
+            </div>
+        </div>
+        <div class="card-footer">May your Love live long💖</div>
+    </div>
+    
+<script>
+function my() {
+
+    var name=document.getElementById('name').value;
+    var lname=document.getElementById('lname').value;
+
+   if(name!="" && lname!="" && (name.length>=3) && isNaN(lname) && isNaN(name)&& name!="rishi" && lname!="rishi" && name!="RISHI" && lname!="RISHI" && name!="RISHI singh" && lname!="RISHI singh" && name!="RISHI SINGH" && lname!="RISHI SINGH" && name!="Rishi" && lname!="Rishi" && name!="Rishi singh" && lname!="Rishi singh" && name!="Rishi Singh" && lname!="Rishi Singh" && name!="rishi singh" && lname!="rishi singh" && name!="rishisingh" && lname!="rishisingh")
+
+   { function getRndInteger(minimum, maximum) {
+return Math.floor(Math.random() * (maximum - minimum)) + minimum;
+}
+var data = getRndInteger(40, 100);
+document.getElementById('lovevalue').value=data+"%";
+if(data>95){
+  alert("OHO, Itna pyar 😍💖, mughe yakeen tha ki tum sachhe ashik ho aur tumhi kr skte ho sirf itna pyar....")
+}
+}
+else
+   { alert('Agar apna name nhi bhar skte ya phir GF nhi hai to phir kun muh utha ke chle aye ho, bhaag ja yha se nithalle..🤬');}
+
+}
+</script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
